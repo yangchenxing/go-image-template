@@ -1,0 +1,135 @@
+{
+    "width": 1140,
+    "height": 640,
+    "background_color": "FFFFFF",
+    "components": [
+        {
+            "type": "fixed_image",
+            "point": {
+                "x": 0,
+                "y": 0
+            },
+            "source": "bg-1.png"
+        },
+        {
+            "type": "text_block",
+            "bounds": {
+                "min": {
+                    "x": 550,
+                    "y": 156
+                },
+                "max": {
+                    "x": 1140,
+                    "y": 206
+                }
+            },
+            "alignment": {
+                "lineheight": 50,
+                "maxlines": 1,
+                "horizontal": "left"
+            },
+            "font": {
+                "name": "PingFangSC-Regular",
+                "size": 36,
+                "color": "999999"
+            },
+            "spans": [
+                {
+                    "text": "建筑面积：{{.area}}㎡"
+                }
+            ]
+        },
+        {
+            "type": "text_block",
+            "bounds": {
+                "min": {
+                    "x": 550,
+                    "y": 222
+                },
+                "max": {
+                    "x": 1140,
+                    "y": 272
+                }
+            },
+            "alignment": {
+                "lineheight": 50,
+                "maxlines": 1,
+                "horizontal": "left"
+            },
+            "font": {
+                "name": "PingFangSC-Regular",
+                "size": 36,
+                "color": "999999"
+            },
+            "spans": [
+                {
+                    "text": "费用："
+                },
+                {
+                    "text": "{{.price}}",
+                    "font": {
+                        "name": "PingFangSC-Regular",
+                        "size": 36,
+                        "color": "AA0000"
+                    }
+                },
+                {
+                    "text": "万元"
+                }
+            ]
+        },
+        {
+            "type": "text_block",
+            "bounds": {
+                "min": {
+                    "x": 550,
+                    "y": 70
+                },
+                "max": {
+                    "x": 1140,
+                    "y": 122
+                }
+            },
+            "alignment": {
+                "lineheight": 52,
+                "maxlines": 1,
+                "horizontal": "left"
+            },
+            "font": {
+                "name": "PingFangSC-Bold",
+                "size": 52,
+                "color": "333333"
+            },
+            "spans": [
+                {
+                    "text": "{{.style}}风格装修"
+                }
+            ]
+        },
+        {
+            "type": "clip_image",
+            "bounds": {
+                "min": {
+                    "x": 30,
+                    "y": 50
+                },
+                "max": {
+                    "x": 510,
+                    "y": 590
+                }
+            },
+            "source": "image",
+            "clip": {
+                "min": {
+                    "x": 160,
+                    "y": 0
+                },
+                "max": {
+                    "x": 560,
+                    "y": 450
+                }
+            }
+        }
+    ],
+    "resource_file": "resource.zip"
+}

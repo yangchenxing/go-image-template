@@ -1,0 +1,49 @@
+{
+    "width": 1140,
+    "height": 640,
+    "components": [
+        {
+            "type": "fixed_image",
+            "point": {
+                "x": 0,
+                "y": 0
+            },
+            "source": "http://paimgcdn.baidu.com/advimg/qijia_demo?name=qijia_2&Style=%BC%F2%D4%BC&Image=http%3A%2F%2Fms.bdimg.com%2Fdsp-image%2F71093377.jpg&Price=5&Area=100&enc=gbk"
+        },
+        {
+            "type": "text_block",
+            "bounds": {
+                "min": {
+                    "x": 100,
+                    "y": 100
+                },
+                "max": {
+                    "x": 500,
+                    "y": 200
+                }
+            },
+            "alignment": {
+                "lineheight": 50,
+                "maxlines": 1
+            },
+            "font": {
+                "name": "yahei_bold",
+                "size": 28,
+                "color": "000000"
+            },
+            "spans": [
+                {
+                    "text": "测试"
+                },
+                {
+                    "text": "文本",
+                    "font": {
+                        "name": "yahei_bold",
+                        "size": 38,
+                        "color": "FF0000"
+                    }
+                }
+            ]
+        }
+    ]
+}
