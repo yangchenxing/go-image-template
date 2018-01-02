@@ -24,6 +24,10 @@ func (res Resources) loadZipFile(path string) error {
 		return err
 	}
 	defer r.Close()
+	return res.loadZipReader(r)
+}
+
+func (res Resources) loadZipReader(r *zip.ReadCloser) error {
 	for _, f := range r.File {
 		if rc, err := f.Open(); err != nil {
 			return err

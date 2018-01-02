@@ -7,7 +7,6 @@ import (
 	"image/png"
 	"io/ioutil"
 	"log"
-	"path"
 
 	"github.com/yangchenxing/go-image-template"
 )
@@ -18,10 +17,8 @@ func main() {
 	paramFile := flag.String("param", "param.json", "参数文件路径")
 	outFile := flag.String("out", "out.png", "输出文件路径")
 	flag.Parse()
-	var tmpl *imgtmpl.ImageTemplate
-	if content, err := ioutil.ReadFile(*tmplFile); err != nil {
-		panic(err)
-	} else if tmpl, err = imgtmpl.LoadImageTemplate(content, path.Dir(*tmplFile)); err != nil {
+	tmpl, err := imgtmpl.LoadImageTemplateJsonFile(*tmplFile)
+	if err != nil {
 		panic(err)
 	}
 	log.Println("加载模板完成")
