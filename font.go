@@ -16,7 +16,7 @@ var (
 	fontCacheMutex sync.Mutex
 )
 
-func setFontPath(path string) {
+func SetFontPath(path string) {
 	fontPath = path
 }
 
